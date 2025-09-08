@@ -11,7 +11,7 @@ class RulesMedications extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,13 @@ class RulesMedications extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'nombre' => "required",
+            'dosis' => "required",
+            'frecuencia' => "required",
+            'duracion' => "required",
+            'tratamiento_id' => "required",
+            'proveedor' => "required",
+            'efectos_secundarios' => "required",
         ];
     }
 }

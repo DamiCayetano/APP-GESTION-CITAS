@@ -16,7 +16,7 @@ class Medications extends Model
     'frecuencia',
     'duracion',
     'tratamiento_id',
-    'proovedor',
+    'proveedor',
     'efectos_secundarios'
 ];
 

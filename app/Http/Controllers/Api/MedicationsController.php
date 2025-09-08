@@ -26,6 +26,7 @@ class MedicationsController extends Controller
         return view('medications.create');
     }
 
+
     public function store(RulesMedications $request){
         Medications::create($request->all());
         return redirect()->route('medications.index')->with('success','Medicamento creado correctamente.');
@@ -37,14 +38,14 @@ class MedicationsController extends Controller
         ],201);*/
     }
 
-    public function edit(Medications $patient)
+    public function edit(Medications $medication)
     {
-        return view('patients.edit', compact('patient'));
+        return view('medications.edit', compact('medication'));
     }
 
-    public function update(/*string $id, Request $request*/ Request $request, Patients $patient){
-        $patient->update($request->all());
-        return redirect()->route('patients.index')->with('success','Paciente actualizado correctamente.');
+    public function update(/*string $id, Request $request*/ Request $request, Medications $medication){
+        $medication->update($request->all());
+        return redirect()->route('medications.index')->with('success','Medicamento actualizado correctamente.');
     /* $patients = Patients::find($id);
 
     if (!$patients) {
@@ -64,9 +65,9 @@ class MedicationsController extends Controller
     ], 200);*/
     }
 
-    public function destroy(/*string $id*/ Patients $patient){
-        $patient->delete();
-        return redirect()->route('patients.index')->with('success','Paciente eliminado correctamente.');
+    public function destroy(/*string $id*/ Medications $medication){
+        $medication->delete();
+        return redirect()->route('medications.index')->with('success','Medicamento eliminado correctamente.');
     /* $patients = Patients::find($id);
 
     if (!$patients) {
@@ -84,4 +85,9 @@ class MedicationsController extends Controller
         'mensaje' => 'Paciente eliminado correctamente'
     ], 200);*/
     }
+
+
+    
 }
+
+

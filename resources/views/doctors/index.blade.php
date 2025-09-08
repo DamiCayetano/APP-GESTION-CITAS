@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1>Lista de Doctores wapos</h1>
+    <h1>Lista de Doctores </h1>
     <a href="{{ route('doctors.create') }}" class="btn btn-primary mb-3">Nuevo doctor</a>
 
     @if(session('success'))

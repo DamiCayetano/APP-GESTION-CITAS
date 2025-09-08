@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\Api\PatientsController;
 use App\Http\Controllers\Api\DoctorsController;
+use App\Http\Controllers\Api\MedicationsController;
+
+
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -12,4 +15,7 @@ Route::get('/user', function (Request $request) {
 
 Route::apiResource('patients', PatientsController::class);
 Route::apiResource('doctors', DoctorsController::class);
+Route::apiResource('medications', MedicationsController::class);
+
+
 
