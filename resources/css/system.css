@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Fondo degradado */
+body {
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    background: linear-gradient(to bottom, #eaefff, #c7d3ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header con logo y texto */
+.header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+    line-height: 1.4;
+}
+
+/* Contenedor de las primeras 4 cards */
+.cards-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 30px;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Contenedor de las 2 cards inferiores */
+.cards-center {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding-left: 14px;
+}
+
+/* Cada card */
+.card {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 160px;
+}
+
+.card img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Efecto hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    border-color: #b3b3ff;
+}
