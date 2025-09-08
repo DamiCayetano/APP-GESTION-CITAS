@@ -7,6 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Medications extends Model
 {
-    /** @use HasFactory<\Database\Factories\MedicationsFactory> */
+    /** @use HasFactory<\Database\Factories\PatientsFactory> */
     use HasFactory;
+
+    protected $fillable = [
+    'nombre',
+    'dosis',
+    'frecuencia',
+    'duracion',
+    'tratamiento_id',
+    'proovedor',
+    'efectos_secundarios'
+];
+
+
 }

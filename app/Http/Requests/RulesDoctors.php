@@ -11,7 +11,7 @@ class RulesDoctors extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,13 @@ class RulesDoctors extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'nombre' => "required",
+            'apellidos' => "required",
+            'especialidad' => "required",
+            'telefono' => "required",
+            'email' => "required",
+            'licencia' => "required",
+            'años_experiencia' => "required",
         ];
     }
 }
