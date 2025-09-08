@@ -16,3 +16,6 @@ Route::get('/login', function () {
 Route::get('/system', function () {
     return view('system');
 });
+
+Route::resource('patients', PatientsController::class);
+Route::resource('doctors', DoctorsController::class);
