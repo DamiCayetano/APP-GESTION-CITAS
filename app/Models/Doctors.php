@@ -7,6 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Doctors extends Model
 {
-    /** @use HasFactory<\Database\Factories\DoctorsFactory> */
+    /** @use HasFactory<\Database\Factories\PatientsFactory> */
     use HasFactory;
+
+    protected $fillable = [
+    'nombre',
+    'apellidos',
+    'especialidad',
+    'telefono',
+    'email',
+    'licencia',
+    'años_experiencia'
+];
 }
+

@@ -9,3 +9,6 @@ class DiagnosticsController extends Controller
 {
     //
 }
+
+
+
