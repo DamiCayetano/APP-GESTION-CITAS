@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RulesMedications;
 use App\Models\Medications;
+use App\Models\Patients;
 use Database\Seeders\MedicationsSeeder;
 use Illuminate\Http\Request;
 
